@@ -1,0 +1,44 @@
+<!--  Aufgabe02
+Name: Jade
+Matrikelnummer: 254887
+Datum: 15.04.2018
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe.
+Er wurde nicht kopiert und nicht diktiert. -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="text/javascript" src="aufgabe3.js"></script>
+		<link href="aufgabe3.css" rel="stylesheet" type="text/css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="starteinstellungen">
+			<h2>Memory</h2>
+			<select id="inputspieler">
+				<option disabled selected>Anzahl Spieler</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+			<select id="inputkarten">
+				<option disabled selected>Kartenpaare</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>
+			<button id="spielstart">Spiel starten</button>
+		</div>
+		<div id="spielframe">
+			<div id="spielfeld"></div>
+			<div id="spieler">
+				<table>
+					<tr id="spielertabelle">
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
