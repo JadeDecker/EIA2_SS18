@@ -1,0 +1,48 @@
+<!--  Aufgabe02
+Name: Jade
+Matrikelnummer: 254887
+Datum: 6.05.2018
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe.
+Er wurde nicht kopiert und nicht diktiert. -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="text/javascript" src="aufgabe4.js"></script>
+		<link href="aufgabe4.css" rel="stylesheet" type="text/css">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div id="starteinstellungen">
+			<h2>Memory</h2>
+			<select id="inputspieler">
+				<option disabled selected>Anzahl Spieler</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+			<div id="spielernamen">
+			
+			</div>
+			<p>Kartenpaare: <span id="anzahlkartenpaare">5</span></p>
+			<input type="range" min="5" max="8" value="5" id="inputkarten">
+			<select id="inputdeck">
+				<option disabled selected>Kartendeck</option>
+				<option value="zahlen">Zahlen</option>
+				<option value="buchstaben">Buchstaben</option>
+				<option value="symbole">Symbole</option>
+			</select>
+			<button id="spielstart">Spiel starten</button>
+		</div>
+		<div id="spielframe">
+			<div id="spielfeld"></div>
+			<div id="spielerliste">
+				<table>
+					<tr id="spielertabelle">
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
