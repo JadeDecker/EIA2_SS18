@@ -1,0 +1,50 @@
+<!--  Aufgabe04.1
+Name: Jade
+Matrikelnummer: 254887
+Datum: 6.05.2018
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe.
+Er wurde nicht kopiert und nicht diktiert. -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="text/javascript" src="aufgabe8.js"></script>
+		<link href="aufgabe8.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="eintragen">
+			<h1>Eintragen</h1>
+			<input type="text" placeholder="Nachname" class="textinput" id="inputnachname">
+			<input type="text" placeholder="Vorname" class="textinput" id="inputvorname">
+			<input type="text" placeholder="Martrikelnummer" class="textinput" id="inputmartrikelnummer">
+			<input type="text" placeholder="Alter" class="textinput" id="inputalter">
+			<table style="width: 90%; margin-left: 5%; margin-bottom: 1em;">
+				<tr>
+					<td style="width: 10%;"><input type="radio" name="gender" value="male" id="male" /></td>
+					<td><label for="male">Männlich</label></td>
+				</tr>
+				<tr>
+					<td style="width: 10%;"><input type="radio" name="gender" value="female" id="female"/></td>
+					<td><label for="female">Weiblich</label></td>
+				</tr>
+			</table>
+			<select id="inputstudiengang" class="textinput">
+				<option disabled selected value="0">Studiengang</option>
+				<option value="MKB">MKB</option>
+				<option value="OMB">OMB</option>
+				<option value="MIB">MIB</option>
+			</select>
+			<button id="speichern" class="textinput">Speichern</button>
+		</div>
+		<div class="daten">
+			<h1>Datensätze</h1>
+			<table id="datentabelle" style="width: 100%; border-collapse: collapse;"  class="datentd"></table>
+		</div>
+		<div class="suchen">
+			<h1>Suche</h1>
+			<input type="text" placeholder="Martrikelnummer" class="textinput" id="inputsuche">
+			<button id="suchen" class="textinput">Suchen</button>
+			<table id="suchtabelle" style="width: 100%; border-collapse: collapse;"  class="datentd"></table>
+		</div>
+	</body>
+</html>
